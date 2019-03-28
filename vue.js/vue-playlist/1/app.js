@@ -4,6 +4,8 @@ new	Vue({
 	data:{
 		name:"Disman",
 		job:"Web开发",
+		website:"http://www.baidu.com/",
+		websiteTag:"<a href='https://www.baidu.com'>百度</a>"
 	},
 	methods:{
 		greet:function(time){

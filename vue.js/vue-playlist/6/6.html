@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Events</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1>动态 CSS </h1>
+		<h2>示例1</h2>
+		<div v-on:click="changeColor = !changeColor" v-bind:class=" {changeColor:changeColor}">
+			<span>Disman</span>
+		</div>
+		<h2>示例2</h2>
+		<button v-on:click="changeColor = !changeColor">change color</button>
+		<button v-on:click="changeLength = !changeLength"> change length</button>
+		<div v-bind:class="compClasses">
+			<span>Disman</span>
+		</div>
+	</div>
+	
+	<script src="app.js"></script>
+</body>
+</html>
