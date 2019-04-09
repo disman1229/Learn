@@ -66,7 +66,7 @@
     </div>
 
     <div id="app2">
-        <h3>{{dt | dateFormat}}</h3>
+        <h3 v-color="'pink'" v-fontweight="900" v-fontsize="'50'">{{dt | dateFormat}}</h3>
     </div>
     <script>
         // 全局过滤器，进行时间的格式化
@@ -233,6 +233,18 @@
                     }
                 }
             },
+
+            directives:{ //自定义私有指令
+                'fontweight':{ //设置字体粗细
+                    bind:function(el ,binding){
+                        el.style.fontWeight = binding.value
+                    }
+                },
+                'fontsize':function(el,binding){ //注意：这个 function 等同于把代码写到了 bind 和 update 中去
+                el.style.fontSize = parseInt(binding.value) + "px"
+            }
+            },
+            
         })
     </script>
 </body>
