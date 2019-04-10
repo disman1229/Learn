@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery动画</title>
+    <script src="../lib/jquery1.7.2.min.js"></script>
+    <style>
+        #main{
+            width: 300px;
+            height: 500px;
+            background: orange;
+            border-radius:5px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <button id="btnShow">基本显示</button>
+        <button id="btnHide">基本隐藏</button>
+        <button id="btnDown">滑动显示</button>
+        <button id="btnUp">滑动隐藏</button>
+        <button id="btnIn">淡入显示</button>
+        <button id="btnOut">淡出隐藏</button>
+    </p>
+    <div id="main">
+        python全栈工程师 基础+就业班（完） B站时间最长的教程,python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程
+    </div>
+    <script>
+        $(function(){
+            $("#btnShow").click(function(){
+                $("#main").show(3000);
+            });
+            $("#btnHide").click(function(){
+                $("#main").hide(3000);
+            });
+            $("#btnDown").click(function(){
+                $("#main").slideDown(1000);
+            });
+            $("#btnUp").click(function(){
+                $("#main").slideUp(1000);
+            });
+            $("#btnIn").click(function(){
+                $("#main").fadeIn(1000);
+            });
+            $("#btnOut").click(function(){
+                $("#main").fadeOut(1000);
+            });
+        });
+    </script>
+</body>
+</html>

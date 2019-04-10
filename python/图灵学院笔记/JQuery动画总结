@@ -1,0 +1,11 @@
+1.jQuery动画
+    1.基本显示/隐藏
+        $obj.show() / $obj.show(执行时长);
+        $obj.hide() / $obj.hide(执行时长);
+    2.滑动式显示 / 隐藏
+        $obj.slideDown() / $obj.slideDown(执行时长);
+        $obj.slideUp() / $obj.slideUp(执行时长);
+    3.淡入淡出式显示 / 隐藏
+        $obj.fadeIn() / $obj.fadeIn(执行时长);
+        $obj.fadeOut() / $obj.fadeOut(执行时长);
+        
