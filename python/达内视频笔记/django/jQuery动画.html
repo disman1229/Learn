@@ -24,8 +24,9 @@
         <button id="btnUp">滑动隐藏</button>
         <button id="btnIn">淡入显示</button>
         <button id="btnOut">淡出隐藏</button>
+        <li id="SH">移入移除显示和隐藏</li>
     </p>
-    <div id="main">
+    <div id="main" style="display:none">
         python全栈工程师 基础+就业班（完） B站时间最长的教程,python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程python全栈工程师 基础+就业班（完） B站时间最长的教程
     </div>
     <script>
@@ -47,6 +48,12 @@
             });
             $("#btnOut").click(function(){
                 $("#main").fadeOut(1000);
+            });
+            $("#SH").mouseover(function(){
+                $("#main").show(1000);
+            });
+            $("#SH").mouseout(function(){
+                $("#main").hide(1000);
             });
         });
     </script>
