@@ -15,8 +15,8 @@
     13）将 name 变量对应的值首字母"a"大写，并输出结果
     14）判断 name 变量对应的值的字母"l"出现几次，并输出结果
     15）如果判断 name 变量对应的值前四位"l"出现几次，并输出结果
-    16）从 name 变量对应的值中找到"N"对应的引索（如果找到则不报错），并输出结果
-    17）从 name 变量对应的值中找到"N"对应的引索（如果找到则返回-1），并输出结果
+    16）从 name 变量对应的值中找到"N"对应的引索（如果找不到则报错），并输出结果
+    17）从 name 变量对应的值中找到"N"对应的引索（如果找不到则返回-1），并输出结果
     18）从 name 变量对应的值中找到"X le"对应的引索，并输出结果
     19）请输出 name 变量对应的值的第2个字符？
     20）请输出 name 变量对应的值的前3个字符？
@@ -58,4 +58,102 @@
 
 明日默写内容：
     分别用while，for循环输出字符串s = input("你想输入的内容")的每个字符。
+'''
+
+#  第一题答案
+'''
+name = "aleX leNb"
+# 1.1
+print(name.strip())
+#1.2
+print(name[2:])
+#1.3
+print(name[:-2])
+#1.4
+print(name[1:8])
+#1.5
+print(name.startswith("al"))
+#1.6
+print(name.endswith("Nb"))
+#1.7
+print(name.replace("l","p"))
+#1.8
+print(name.replace("l","p",1))
+#1.9
+print(name.split("l"))
+#1.10
+print(name.split("l",1))
+#1.11
+print(name.upper())
+#1.12
+print(name.lower())
+#1.13
+print(name.capitalize())1229
+
+print(name.replace("a","A")
+#1.14
+print(name.count("l"))
+#1.15
+s1 = name[:4]
+print(s1.count("l"))
+#1.16
+print(name.index("N"))
+#1.17
+print(name.find("N"))
+#1.18
+print(name.find("X le"))
+#1.19
+print(name[1])
+#1.20
+print(name[:3])
+#1.21
+print(name[-2:])
+#1.22
+print(name.find("e"))
+
+count = 0
+while count < len(name):
+    if name[count] == "e":
+        print(count)
+    count += 1
+'''
+
+# 第二题答案
+'''
+s="123a4b5c"
+#2.1
+s1 = s[0:3]
+print(s1)
+#2.2
+s2 = s[3:6]
+print(s2)
+#2.3
+s3 = s[::2]
+print(s3)
+#2.4
+s4 = s[1:7:2]
+print(s4)
+#2.5
+s5 = s[-1]
+print(s5)
+s6 = s[-3:-8:-2]
+print(s6)
+'''
+
+# 第三题答案
+'''
+# 3 方法一：while
+s="asdfer"
+count = 0
+while count < len(s):
+    print(s[count])
+    count += 1
+print("-" * 10)
+# 3 方法二：for
+for i in s:
+    print(i)
+print("-" * 10)
+count = len(s)
+for s in s:
+    print(s)
 '''
