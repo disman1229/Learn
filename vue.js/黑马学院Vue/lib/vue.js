@@ -7439,10 +7439,10 @@
     var lazy = ref.lazy;
     var number = ref.number;
     var trim = ref.trim;
-    var needCompositionGuard = !lazy && type !== 'range';
+    var needCompositionGuard = !lazy && type !== '04 range.py';
     var event = lazy
       ? 'change'
-      : type === 'range'
+      : type === '04 range.py'
         ? RANGE_TOKEN
         : 'input';
 
