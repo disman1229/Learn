@@ -147,9 +147,8 @@
 # 9.利用for循环和range从100~10，倒序将所有的偶数添加到⼀个新列表中，然后对列表的元素进⾏筛选，将能被4整除的数留下来。
 # lis = []
 # for i in range(100,9,-1):
-#     if i % 4 == 0:
+#     if i % 2 == 0:
 #         lis.append(i)
-
 # new_lis = []
 # for i in lis:
 #     if i % 4 == 0:
@@ -158,16 +157,16 @@
 
 # 10.利用for循环和range，将1-30的数字⼀次添加到⼀个列表中，并循环这个列表，将能被3整除的数改成*。
 # lis = []
-# index = 0
 # for i in range(1,31):
 #     lis.append(i)
 
 # 方案一
+# new_lis = []
 # for i in lis:
 #     if i % 3 == 0:
-#         lis[index] = "*"
-#     index += 1
-# print(lis)
+#         i = "*"
+#     new_lis.append(i)
+# print(new_lis)
 
 # 方案二
 # while index < len(lis):
@@ -182,7 +181,7 @@
 # 方案一
 # for i in li:
 #     c = i.replace(" ","")
-#     if c.startswith("A") or c.startswith("a") and c.endswith("c"):
+#     if (c.startswith("A") or c.startswith("a")) and c.endswith("c"):
 #         lis.append(c)
 # for i in lis:
 #     print(i)
@@ -198,14 +197,15 @@
 # 敏感词列表 li = ["苍老师", "东京热", "武藤兰","波多野结衣"]
 # 则将用户输入的内容中的敏感词汇替换成等长度的*（苍老师就替换***），并添加到这个列表中；
 # 如果用户输入的内容没有敏感词汇，则直接添加到上述的列表中。
-# comment = input("请输入您的评论:")
+
+# lst = []
 # li = ["苍老师", "东京热", "武藤兰","波多野结衣"]
-# lis = []
+# comment = input("请输入您的评论:")
 # for i in li:
 #     if i in comment:
-#         comment = comment.replace(comment,"*"*len(i))
-# lis.append(comment)
-# print(lis)
+#         comment = comment.replace(i,"*"*len(i))
+# lst.append(comment)
+# print(lst)
 
 # 13.有如下列表
 li = [1, 3, 4, "alex", [3, 7, 8, "TaiBai"], 5, "RiTiAn"]
@@ -220,38 +220,32 @@ li = [1, 3, 4, "alex", [3, 7, 8, "TaiBai"], 5, "RiTiAn"]
 # "taibai"
 # 5
 # ritian
-# for i in li :
-#     if type(i) == list :
-#         for h in i :
-#             print(h)
-#     else:
-#         print(i)
 
-# for i in range(len(li)):
-#     if type(li[i]) == list:
-#         for h in range(len(li[i])):
-#             print(li[i][h])
+# for e in li:
+#     if type(e) == list:
+#         for ee in e:
+#             if type(ee) == str:
+#                 print(ee.lower())
+#             else:
+#                 print(ee)
+#     elif type(e) == str:
+#         print(e.lower())
 #     else:
-#         print(li[i])
+#         print(e)
+
 
 # 14. 把班级学生数学考试成绩录入到一个列表中:并求平均值. 要求: 录入的时候要带着姓名录入, 例如: 张三_44
 # lis = []
-# sum = 0
-# count = 0
-# while True:
-#     content = input("请输入姓名_分数:")
-#     count += 1
-#     if content.upper() == "Q":
+# while 1:
+#     stu = input("请输入学生的姓名和分数（姓名_分数），输入Q退出录入:")
+#     if stu.upper() == "Q":
 #         break
-#     content = content.split("_")
-#     for i in content:
-#         if i.isdigit():
-#             lis.append(i)
-#     print(lis)
-#     for i in lis:
-#         sum = sum + int(i)
-#     print(sum)
-# print(sum/count)
+#     lis.append(stu)
+# sum = 0
+# for el in lis:
+#     li = el.split("_")
+#     sum += int(li[1])
+# print(sum / len(lis))
 
 # 15.给出一个任意的数字n,从0开始数,数到n结束,把每个数字都放在列表中,在数的过程中出现7或者7的倍数,则向列表中添加一个"咣"
 #例如,输入10
