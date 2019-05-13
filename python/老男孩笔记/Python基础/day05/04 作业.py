@@ -122,21 +122,21 @@ av_catalog = {
 #        2：用户输入选择的商品序号，然后打印商品名称及价格
 #        3：如果用户输入的商品序号有误，则提示输入有误，并重新输入。
 #        4：用户输入Q或者q，退出程序。
-goods = [
-    {"name":"电脑","price":1999},
-    {"name":"鼠标","price":10},
-    {"name":"游艇","price":20},
-    {"name":"美女","price":998},
-]
-while 1:
-    for i in goods:
-        print(goods.index(i) + 1,i["name"],i["price"])
-    good = input("请输入你想要的商品编号,输入Q退出:")
-
-    if good.isdigit() and  0 < int(good) < len(goods):
-        i_index = int(good) - 1
-        print(goods[i_index]["name"],goods[i_index]["price"])
-    elif good.upper() == "Q":
-        break
-    else:
-        print("你输入的有误,请重新输入!")
+# goods = [
+#     {"name":"电脑","price":1999},
+#     {"name":"鼠标","price":10},
+#     {"name":"游艇","price":20},
+#     {"name":"美女","price":998},
+# ]
+# while 1:
+#     for i in goods:
+#         print(goods.index(i) + 1,i["name"],i["price"])
+#     good = input("请输入你想要的商品编号,输入Q退出:")
+#
+#     if good.isdigit() and  0 < int(good) < len(goods):
+#         i_index = int(good) - 1
+#         print(goods[i_index]["name"],goods[i_index]["price"])
+#     elif good.upper() == "Q":
+#         break
+#     else:
+#         print("你输入的有误,请重新输入!")
