@@ -15,13 +15,29 @@
 # 1.完成a和b的数据交换. 例如, a = 10, b = 24 交换之后, a = 24, b = 10
 # 2.循环列表. 判断a[i]和a[i+1]之间的大小关系, 如果a[i]比a[i+1]大. 则进行互换.循环结束的时候. 当前列表中最大的数据就会被移动到最右端.
 # 3.想一想, 如果再次执行一次上面的操作. 最终第二大的数据就移动到了右端. 以此类推.如果反复的进行执行相应的操作. 那这个列表就变成了一个有序列表.
+# lst = [6,5,7,1,2,6,4,5]
+# a = 10
+# b = 5
+# a,b = b,a
+# print(a,b)
 
-
+# 冒泡排序
+# count = 0
+# while count < len(lst):
+#     i = 0
+#     j = 1
+#     while j < len(lst) - i:
+#         if lst[i] > lst[i + 1]:
+#             lst[i],lst[i + 1] = lst[i+ 1],lst[i]
+#         i += 1
+#     count += 1
+# print(lst)
 
 # 三.完成彩票36选7的功能. 从36个数中随机的产生7个数. 最终获取到7个不重复的数据作为最终的开奖结果.
 # 随机数:
 # from random import randint
 # s = set()
+# while len(s) < 7:
 # while int(len(s)) < 7:
 #     s.add(randint(1,36))
 # lst = list(s)
