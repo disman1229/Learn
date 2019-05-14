@@ -1,3 +1,4 @@
 {
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "python.pythonPath": "/Users/zhangjie/anaconda3/envs/learn/bin/python"
 }
