@@ -94,3 +94,48 @@
 #     ll = i.split(":")
 #     dic[ll[0]] = ll[1]
 # print(dic)
+
+
+# content = input("请输入内容:")
+# sum = 0
+# content.replace(' ','')
+# ls = content.split("+")
+# dic = {'最终的结果':None}
+# for i in ls:
+#     sum = sum + int(i)
+# dic['最终的结果'] = sum
+# print(dic)
+
+
+# li = ['苍老师','东京热','武藤兰','alex']
+# result = []
+# while 1:
+#     content = input("请输入你的评论:")
+#     if content.upper() == "Q":
+#         break
+#     for el in li:
+#         if el in content:
+#             content = content.replace(el,"*"*len(el))
+#     result.append(content)
+#     print(result)
+
+
+# lst = []
+# for i in range(10):
+#     num = input("请输入%s个数字:" %(i+1))
+#     lst.append(int(num))
+# key1 = []
+# key2 = []
+# for el in lst:
+#     if el > 55:
+#         key1.append(el)
+#     else:
+#         key2.append(el)
+# dic = {'key1':key1,'key2':key2}
+# print(dic)
+
+
+
+# 6、车牌区域划分，给出一下车牌和地点信息对照，请根据车牌信息，分析出各省的车牌持有数量。
+cars = ['鲁A32444', '鲁B12333', '京B8989M', '黑C49678', '黑C46555', '沪B25041', '黑C34567']
+# locations = {'沪': '上海', '京': '北京', '黑': '黑龙江', '鲁': '山东', '鄂': '湖北', '湘': '湖南'}
