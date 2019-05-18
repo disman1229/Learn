@@ -67,6 +67,7 @@
 # lis = a.split("|")
 # for i in lis:
 #     ll = i.split(":")
+#     print(ll)
 #     dic[ll[0]] = ll[1]
 # print(dic)
 

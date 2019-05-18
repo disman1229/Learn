@@ -64,3 +64,40 @@
 # f1 = f.truncate()
 # f.seek(0)
 # print(f.read())
+
+
+
+# ls = []
+# total = 0
+# f = open('a.txt',mode='r',encoding='utf-8')
+# for line in f:
+#     dic = {}
+#     lis = line.strip().split(' ')
+#     dic['name'] = lis[0]
+#     dic['price'] = lis[1]
+#     dic['amount'] = lis[2]
+#     ls.append(dic)
+#     total = total + int(dic['price']) * int(dic['amount'])
+# print(total)
+# print(ls)
+
+# import os
+# with open('a3.txt',mode='r',encoding='utf-8') as f1,\
+#     open('a3.txt_副本',mode='w',encoding='utf-8') as f2:
+#     for line in f1:
+#         a = line.replace('alex','SB')
+#         f2.write(a)
+# os.remove('a3.txt')
+# os.rename('a3.txt_副本','a3.txt')
+
+
+# result = []
+# f = open('a2.txt',mode='r',encoding='utf-8')
+# for line in f:
+#     dic = {}
+#     lst = line.split(" ")
+#     for e in lst:
+#         ll = e.split(":")
+#         dic[ll[0]] = ll[1]
+#     result.append(dic)
+# print(result)
