@@ -80,6 +80,7 @@
 #     total = total + int(dic['price']) * int(dic['amount'])
 # print(total)
 # print(ls)
+# f.close()
 
 # import os
 # with open('a3.txt',mode='r',encoding='utf-8') as f1,\
@@ -101,3 +102,15 @@
 #         dic[ll[0]] = ll[1]
 #     result.append(dic)
 # print(result)
+# f.close()
+
+# lis = []
+# with open('a4.txt',mode='r',encoding='utf-8') as f:
+#     f1 = f.readline().split()
+#     for line in f:
+#         dic = {}
+#         li = line.strip().split()
+#         for i in range(len(f1)):
+#             dic[f1[i]] = li[i]
+#         lis.append(dic)
+# print(lis)
