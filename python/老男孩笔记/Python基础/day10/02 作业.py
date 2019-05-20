@@ -137,31 +137,33 @@
 
 
 # def login():
-#     with open("用户名密码数据库.txt", mode="r", encoding="utf-8") as f1:
-#         for line in f1:
-#             a = line.split()
+#
 #         count = 1
 #         while count <= 3:
 #             username = input("请输入用户名:")
 #             password = input("请输入密码:")
-#             if username == a[0] and password == a[1]:
-#                 print("登录成功!")
-#                 return
-#             else:
-#                 print("用户名或者密码错误!")
-#                 print("当前输入错误第 %s 次" % count)
-#             count +=1
+#             with open("用户名密码数据库.txt", mode="r", encoding="utf-8") as f1:
+#                 for line in f1:
+#                     a = line.split()
+#                     if username == a[0] and password == a[1]:
+#                         print("登录成功!")
+#                         return
+#                 else:
+#                     print("用户名或者密码错误!")
+#                     print("当前输入错误第 %s 次" % count)
+#                     count +=1
 # login()
 
-username = input("请输入用户名:")
-password = input("请输入密码:")
-def register(username,password):
-    with open("用户名密码数据库.txt", mode="r+", encoding="utf-8") as f1:
-        for line in f1:
-            a = line.split()
-        if username == a[0]:
-            print("请重新输入")
-        else:
-            f1.write(username + " " + password + "\n")
-register(username,password)
 
+# def register():
+#     with open("用户名密码数据库.txt", mode="r+", encoding="utf-8") as f1:
+#         username = input("请输入用户名:")
+#         password = input("请输入密码:")
+#         for line in f1:
+#             a = line.split()
+#             if username == a[0]:
+#                 print("请重新输入")
+#                 return
+#         else:
+#             f1.write(username + " " + password + "\n")
+# register()
