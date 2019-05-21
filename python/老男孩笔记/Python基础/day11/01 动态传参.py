@@ -46,8 +46,8 @@
 
 
 # 聚合成关键字参数
-def func(**kwargs):
-    print(kwargs)
-
-dic = {"name":"disman","age":"18"}
-func(**dic)     # 打散成关键字参数
+# def func(**kwargs):
+#     print(kwargs)
+#
+# dic = {"name":"disman","age":"18"}
+# func(**dic)     # 打散成关键字参数
