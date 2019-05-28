@@ -133,3 +133,61 @@
 #             result.append((hua,dian))
 #     return result
 # print(func())
+
+
+# 13.有如下函数:
+# 你可以任意添加代码，用两种或以上方法，执行inner函数
+# def wrapper():
+#     def inner():
+#         print(666)
+#     inner()
+# wrapper()
+
+# def wrapper():
+#     def inner():
+#         print(666)
+#     return inner()
+#ret = wrapper()
+# ret()
+
+# def wrapper():
+#     def inner():
+#         print(666)
+#     def func2():
+#         inner()
+#     func2()
+# wrapper()
+
+# 14.相关面试题（先在纸上写好答案，然后在运行）
+# 1.函数如下：
+# def calc(a,b,c,d=1,e=2):
+#     return (a+b)*(c-d)+e
+# 请分别写出下列标号代码输出的结果，如果出错请写出Error
+# print(calc(1,2,3,4,5))    # 结果2
+# print(calc(1,2))    #结果Error
+# print(calc(e=4,c=5,a=2,b=3))    # 结果24
+# print(calc(1,2,3))  # 结果8
+# print(calc(1,2,3,e=4))  # 结果10
+# print(calc(1,2,3,d=5,4))    # 结果Error
+
+# 2.(此题有坑)下面代码打印的结果分别是？
+# def extendList(val,list=[]):
+#     list.append(val)
+#     return list
+# list1 = extendList(10)
+# list2 = extendList(123,[])
+# list3 = extendList("a")
+# print("list1%s" %list1)
+# print("list2%s" %list2)
+# print("list3%s" %list3)
+
+# 3.写代码完成99乘法表（升级题）
+# for i in range(1,10):
+#     for j in range(1,i+1):
+#         print("%sx%s=%s" %(i,j,i*j),end=" ")
+#     print()
+
+# for i in range(1,10):
+#     for j in range(1,i+1):
+#         print("*",end=" ")
+#     print()
