@@ -37,3 +37,10 @@
 # pa = outer()
 # ret = pa()
 # print(ret)
+
+# def func():
+#     a = 10
+#     def inner():
+#         print(a)
+#     print(inner.__closure__) # 如果打印的不是None就是闭包
+# func()
