@@ -137,12 +137,11 @@
 
 
 # def login():
-#
 #         count = 1
 #         while count <= 3:
 #             username = input("请输入用户名:")
 #             password = input("请输入密码:")
-#             with open("用户名密码数据库.txt", mode="r", encoding="utf-8") as f1:
+#             with open("db.log", mode="r", encoding="utf-8") as f1:
 #                 for line in f1:
 #                     a = line.split()
 #                     if username == a[0] and password == a[1]:
@@ -155,15 +154,23 @@
 # login()
 
 
-# def register():
-#     with open("用户名密码数据库.txt", mode="r+", encoding="utf-8") as f1:
-#         username = input("请输入用户名:")
-#         password = input("请输入密码:")
-#         for line in f1:
-#             a = line.split()
-#             if username == a[0]:
-#                 print("请重新输入")
+# def regist():
+#     print("欢迎进入注册系统")
+#     while 1:
+#         username = input("请输入用户名:").strip()
+#         password = input("请输入密码:").strip()
+#         if username == "" or password == "":
+#             print("用户名或者密码不合法")
+#             continue
+#         # 校验用户名是否存在
+#         with open("db.log", mode="r+", encoding="utf-8") as f1:
+#             for line in f1:
+#                 if username == line.split("@@")[0]:
+#                     print("该用户名已经注册，请重新注册")
+#                     break
+#             # 这里确定没注册过
+#             else:
+#                 f1.write(username + "@@" + password + "\n")
+#                 print("注册成功")
 #                 return
-#         else:
-#             f1.write(username + " " + password + "\n")
-# register()
+# regist()
