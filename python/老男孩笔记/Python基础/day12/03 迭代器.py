@@ -52,8 +52,8 @@ it = lst.__iter__()
 from collections import Iterable    # 可迭代对象
 from collections import Iterator    # 迭代器
 
-print(isinstance(lst,Iterable))
-print(isinstance(lst,Iterator))
-
-print(isinstance(it,Iterable))
-print(isinstance(it,Iterator))
+# print(isinstance(lst,Iterable))
+# print(isinstance(lst,Iterator))
+#
+# print(isinstance(it,Iterable))
+# print(isinstance(it,Iterator))
