@@ -18,15 +18,19 @@
 # 后面的key计算出一个数字,作为当前这个元素的权重,整个函数根据权重排序
 
 
-lst = [
-    {'name':'汪峰','age':48},
-    {'name':'章子怡','age':38},
-    {'name':'鲁班七号','age':23},
-    {'name':'程咬金','age':34},
-    {'name':'后裔','age':32},
-    ]
-# def func(el):
-#     return el['age']
+# lst = [
+#     {'name':'汪峰','age':48},
+#     {'name':'章子怡','age':38},
+#     {'name':'鲁班七号','age':23},
+#     {'name':'程咬金','age':34},
+#     {'name':'后裔','age':32},
+#     ]
+# # def func(el):
+# #     return el['age']
+#
+# ll = sorted(lst,key=lambda el : len(el['name']),reverse=True)
+# print(ll)
 
-ll = sorted(lst,key=lambda el : len(el['name']),reverse=True)
-print(ll)
+# lst = [{'mm':222},{'mm':333},{'mm':111}]
+# ll = sorted(lst,key=lambda el:el['mm'])
+# print(list(ll))
