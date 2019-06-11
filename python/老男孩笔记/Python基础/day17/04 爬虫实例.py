@@ -24,7 +24,7 @@ def main(num):
     response_html = getPage(url)
     ret = parsePage(response_html)
     print(ret)
-    f = open("move_info7", "a", encoding="utf8")
+    f = open('move_info7', "a", encoding="utf8")
 
     for obj in ret:
         print(obj)
