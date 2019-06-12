@@ -23,11 +23,43 @@ import random
 
 # 验证码
     # 4位数字验证码
-print(random.randint(1000,9999))
     # 6位数字验证码
-print(random.randint(100000,999999))
-    # 6位数字+字母验证码
-l = ['a','b','c','d','e','f','g']
-print(str(random.randrange(100000,999999))+str(random.choice(l)))
+# 函数版本
+# def code(n=6):
+#     s = ''
+#     for i in range(n):
+#         num = random.randint(0,9)
+#         s += str(num)
+#     return s
+# print(code(4))
+# print(code(6))
 
+    # 6位数字+字母验证码
+        # 一个位置上,出现的是数字还是字母应该是随机事件
+        # 随机字母如何生成
+# s = ''
+# for i in range(6):
+#     # 生成随机的字母,数字各一个
+#     num = str(random.randint(0,9))
+#     alpha_upper = chr(random.randint(65,90))
+#     alpha_lower = chr(random.randint(97,122))
+#     res = random.choice([num,alpha_upper,alpha_lower])
+#     s += res
+# print(s)
+
+# 函数版本
+def code(n=6,alpha = True):
+    s = ''
+    for i in range(n):
+        # 生成随机的字母,数字各一个
+        num = str(random.randint(0,9))
+        if alpha:
+            alpha_upper = chr(random.randint(65,90))
+            alpha_lower = chr(random.randint(97,122))
+            num = random.choice([num,alpha_upper,alpha_lower])
+        s += num
+    print(s)
+code(4,False)
+code(alpha=False)
+code()
 # 发红包
