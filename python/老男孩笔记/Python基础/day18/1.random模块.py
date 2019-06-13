@@ -2,7 +2,7 @@
 import random
 # 取随机小数 数学计算
 # print(random.random())  # 取0-1之间的小数
-# print(random.uniform(1,2))  # 取1-2之间的小数
+print(random.uniform(1,2))  # 取1-2之间的小数
 
 # 取随机整数:彩票,抽奖
 # print(random.randint(1,2))  # [1,2]顾头顾尾
@@ -10,7 +10,7 @@ import random
 # print(random.randrange(1,200,2)) #  按照步长取值
 
 # 从列表中随机抽取值:抽奖
-# l = ['a','b',(1,2),123]
+l = ['a','b',(1,2),123]
 # print(random.choice(l))
 # print(random.sample(l,2))
 
