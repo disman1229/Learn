@@ -7,12 +7,12 @@ import sys
 # usr = input('username')
 # pwd = input('password')
 
-# usr = sys.argv[1]
-# pwd = sys.argv[2]
-# if usr == 'disman' and pwd == '123':
-#     print('登录成功')
-# else:
-#     exit()
+usr = sys.argv[1]
+pwd = sys.argv[2]
+if usr == 'disman' and pwd == '123':
+    print('登录成功')
+else:
+    exit()
 
 # 2.sys.path
 # print(sys.path)
