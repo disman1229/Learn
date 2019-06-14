@@ -24,4 +24,4 @@ import os # os模块是和操作系统交互的模块
 
 # print(os.getcwd())  # current work dir  当前工作目录
 
-# os.chdir('D:\Learn\python\老男孩笔记\Python基础\day18')    # 切换当前的工作目录
+# os.chdir('D:\Learn\python\老男孩笔记\Python全栈\day18')    # 切换当前的工作目录
