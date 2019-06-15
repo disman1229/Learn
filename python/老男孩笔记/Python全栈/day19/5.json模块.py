@@ -104,6 +104,6 @@ import json
 # print(json.dumps(dic,ensure_ascii=False))
 
 # json格式化
-data = {'username':['李华','二愣子'],'sex':'male','age':16}
-json_dic2 = json.dumps(data,sort_keys=True,indent=2,separators=(',',':'),ensure_ascii=False)
-print(json_dic2)
+# data = {'username':['李华','二愣子'],'sex':'male','age':16}
+# json_dic2 = json.dumps(data,sort_keys=True,indent=2,separators=(',',':'),ensure_ascii=False)
+# print(json_dic2)
