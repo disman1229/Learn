@@ -77,11 +77,11 @@ import random
     # 如果用户注销,删除这个文件夹
 import os
 
-usr = input("请输入用户名:")
-pwd = input("请输入密码:")
-if usr == 'disman' and pwd == '123':
-    os.makedirs('user/%s'%usr)
-    logout = input("注销请输入1:")
-    if int(logout) == 1:
-        os.rmdir('user/%s'%usr)
+# usr = input("请输入用户名:")
+# pwd = input("请输入密码:")
+# if usr == 'disman' and pwd == '123':
+#     os.makedirs('user/%s'%usr)
+#     logout = input("注销请输入1:")
+#     if int(logout) == 1:
+#         os.rmdir('user/%s'%usr)
 

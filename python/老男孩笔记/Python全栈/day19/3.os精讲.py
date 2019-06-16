@@ -5,7 +5,7 @@
 # os.chdir('dirname') 改变当前脚本工作目录,相当于shell下的cd
 
 import os
-print(os.path.getsize('D:\Learn\python\老男孩笔记\Python全栈\day19'))
+# print(os.path.getsize('D:\Learn\python\老男孩笔记\Python全栈\day19'))
 # dir 路径 \C # 操作系统的命令
 
 # getcwd    # 获取当前执行命令的时候所在的目录
