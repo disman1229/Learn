@@ -43,7 +43,7 @@ def cal(exp):
     return exp_sum
 ret = cal('2-1*-22-3-4/-5')
 print(ret)
-# 小数的 '3.2+4.5' '5.0*6' '2-5' '5/2'
+
 def main(exp):
     exp = exp.replace(' ','')
     while True:
