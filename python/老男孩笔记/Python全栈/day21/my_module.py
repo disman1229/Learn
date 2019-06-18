@@ -11,3 +11,6 @@ def read2():
 
 
 print(54321)
+if __name__ == '__main__':
+    print(__name__)
+    print([__name__])
