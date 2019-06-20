@@ -12,14 +12,21 @@ def select():
         '''
     condition = input('>>>')
     staff_info = settings.staffinfo
-    select_lst = []
+    dic = {}
     with open(staff_info) as f:
         for line in f:
             line_lst = line.strip().split(',')
-            print(line_lst)
+            dic['id'] = line_lst[0]
+            dic['name'] = line_lst[1]
+            dic['age'] = line_lst[2]
+            dic['phone'] = line_lst[3]
+            dic['job'] = line_lst[4]
+        print(dic)
     num1 = condition[6:condition.find('where')].strip()
     num2 = condition[condition.find('where')+6:].strip()
     if 'age' in condition:
-        num2 = num2.split('>')
-        if num2[1] > line_lst[2]:
-            num1 = num1.split(',')
+        # num2 = num2.split('>')
+        # if num2[1] > line_lst[2]:
+        #     num1 = num1.strip(',')
+        #     print(name,age)
+        pass
